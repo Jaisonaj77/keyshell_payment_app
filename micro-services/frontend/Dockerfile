@@ -12,6 +12,6 @@ FROM nginx:alpine
 
 RUN rm /etc/nginx/conf.d/default.conf
 COPY nginx/conf.d/default.conf /etc/nginx/conf.d/default.conf
-COPY --from=build /app/dist/payment-app/browser /usr/share/nginx/html
+COPY --from=build /dist/payment-app/browser /usr/share/nginx/html
 CMD ["nginx", "-g", "daemon off;"]
 
