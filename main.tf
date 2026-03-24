@@ -7,7 +7,7 @@ terraform {
   }
 }
 
-resource "local_file" "atlantis_test" {
+resource "local_file" "atlantis_test1" {
   filename = "atlantis-proof.txt"
   content  = "Atlantis applied successfully at ${timestamp()}"
 }
