@@ -9,5 +9,5 @@ terraform {
 
 resource "local_file" "atlantis_test1" {
   filename = "atlantis-proof.txt"
-  content  = "Atlantis applied successfully at ${timestamp()}"
+  content  = "1 Atlantis applied successfully at ${timestamp()}"
 }
